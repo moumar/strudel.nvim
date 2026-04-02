@@ -99,6 +99,8 @@ const userConfig = {
     strudelUrl: STRUDEL_URL,
 };
 
+let strudelUrl = "https://strudel.cc/";
+
 // Process program arguments at launch
 for (const arg of process.argv) {
     if (arg === CLI_ARGS.HIDE_TOP_BAR) {

@@ -340,7 +340,8 @@ function M.set_buffer(opts)
     return false
   end
 
-  local bufnr = opts and opts.args and opts.args ~= "" and tonumber(opts.args) or vim.api.nvim_get_current_buf()
+  local bufnr = opts and opts.args and opts.args ~= "" and tonumber(opts.args)
+    or vim.api.nvim_get_current_buf()
   if not bufnr or not vim.api.nvim_buf_is_valid(bufnr) then
     vim.notify("Invalid buffer number for :StrudelSetBuffer", vim.log.levels.ERROR)
     return false
