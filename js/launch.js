@@ -1,6 +1,6 @@
-const puppeteer = require("puppeteer");
-const path = require("path");
-const os = require("os");
+import puppeteer from "puppeteer"
+import path from "path"
+import os from "os"
 
 const STRUDEL_URL = "https://cold.strudel.cc/";
 
